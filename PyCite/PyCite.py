@@ -3,12 +3,11 @@ from tkinter import ttk
 
 
 #Main window set up
-defaultWidth = 640
-defaultHeight = 640
+defaultDims = '640x640'
+
 
 root = Tk()
 root.title("PyCite")
-mainWindow = ttk.Frame(master=root, width=defaultWidth, height=defaultHeight)
-mainWindow.pack()
-mainWindow.pack_propagate(0)
+root.geometry(defaultDims)
+
 root.mainloop()
