@@ -21,6 +21,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Citation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Book.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Magazine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Website.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Newspaper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Film.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Journal.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PyCite.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
