@@ -3,6 +3,9 @@ from Citation import *
 class WebsiteCitation(object):
     """description of class"""
 
-    def __init__(self):
-        Citation.__init__()
+    def __init__(self, authlast, authfirst, title, pubyear, url):
+        Citation.__init__(self, authlast, authfirst, title, pubyear)
+        self.url = url
 
+    def geturl(self):
+        return self.url

@@ -9,4 +9,12 @@ class BookCitation(Citation):
         self.city = city
         self.state = state
 
+    def getpub(self):
+        return self.pub
+
+    def getcity(self):
+        return self.city
+
+    def getstate(self):
+        return self.state
 
