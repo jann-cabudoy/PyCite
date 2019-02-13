@@ -1,4 +1,8 @@
-class class5(object):
+from Citation import *
+
+class JournalCitation(Citation):
     """description of class"""
+
+    def __init__():
 
 
