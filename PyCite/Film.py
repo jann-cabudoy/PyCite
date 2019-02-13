@@ -1,4 +1,4 @@
-from Citation import *
+from Citation import Citation
 
 class FilmCitation(Citation):
     """description of class"""

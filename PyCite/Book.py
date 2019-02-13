@@ -1,4 +1,5 @@
-from Citation import *
+from citationdeps import Citation 
+
 
 class BookCitation(Citation):
     """description of class"""

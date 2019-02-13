@@ -1,4 +1,4 @@
-from Citation import *
+from Citation import Citation
 
 class MagazineCitation(Citation):
     """description of class"""
