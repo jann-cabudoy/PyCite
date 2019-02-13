@@ -1,3 +1,13 @@
-from ApplicationWindow import *
+from tkinter import *
+from tkinter import ttk
 
-ApplicationWindow()
+
+#Main window set up
+defaultDims = '640x640'
+
+
+root = Tk()
+root.title("PyCite")
+root.geometry(defaultDims)
+
+root.mainloop()
