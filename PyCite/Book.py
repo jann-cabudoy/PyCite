@@ -1,4 +1,4 @@
-from citationdeps import Citation 
+from Citation import Citation 
 
 
 class BookCitation(Citation):
