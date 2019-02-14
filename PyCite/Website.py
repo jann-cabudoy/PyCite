@@ -1,6 +1,6 @@
 from Citation import Citation
 
-class WebsiteCitation(object):
+class WebsiteCitation(Citation):
     """description of class"""
 
     #Args passed into class are StringVar, so must use .get() to get an actual string
