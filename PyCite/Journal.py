@@ -10,18 +10,6 @@ class JournalCitation(Citation):
         self.jname = jname.get()
         self.volume = volume.get()
 
-    def getissue(self):
-        return self.issue
-
-    def getjname(self):
-        return self.jname
-
-    def getpgbeg(self):
-        return self.pgbeg
-
-    def getpgend(self):
-        return self.pgend
-
     def generatecitation(self):
-        citation_string = authlast + ", "+ authfirst[0:1] + ". " + "(" + pubyear + ")." + title + "." + jname + ", " + volume + "(" + issue + ")." + "\n"
-        return
+        citation_string = self.authlast + ", "+ self.authfirst[0:1] + ". " + "(" + self.pubyear + ")." + self.title + "." + self.jname + ", " + self.volume + "(" + self.issue + ")." + "\n" + "\n"
+        return citation_string

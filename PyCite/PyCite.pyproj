@@ -36,9 +36,6 @@
     <Compile Include="Newspaper.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Film.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Journal.py">
       <SubType>Code</SubType>
     </Compile>

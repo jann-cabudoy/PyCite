@@ -7,19 +7,4 @@ class Citation(object):
         self.title = title.get()
         self.pubyear = pubyear.get()
 
-    def getauthlast(self):
-        return self.authlast
-
-    def getauthfirst(self):
-        return self.authfirst
-
-    def gettitle(self):
-        return self.title
-    
-    def getpubyear(self):
-        return self.pubyear
-
-    def generatecitation(self):
-        return
-
 

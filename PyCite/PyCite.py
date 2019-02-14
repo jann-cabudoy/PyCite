@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from Book import BookCitation
-from Stack import Stack
+
 
 #Main window set up
 root = Tk()
@@ -59,22 +59,12 @@ def NewBookCitation():
     new_book = BookCitation(ln, fn, title, pd, pub, city, state)
     object_list.append(new_book)
     return;
-#BookCitation -> String
-#Takes parameters of BookCitation and outputs into a formatted String
+
 def OutputCitation():
     NewBookCitation()
-    a = object_list[0]
-    lno = a.getauthlast()
-    fno = a.getauthfirst()
-    pdo = a.getpubyear()
-    titleo = a.gettitle()
-    cityo = a.getcity()
-    stateo = a.getstate()
-    pubo = a.getpub()
-    citation_string = lno + ", " + fno[0:1] + "." + " (" + pdo + ") " + titleo + ". " + cityo + ", " + stateo + ": " + pubo + "." + "\n"
-    textbox.insert(END, citation_string)
+    citation_out = object_list[0]
+    textbox.insert(END, citation_out.generatecitation())
     return;
-
 book_test_button = ttk.Button(content, text="Make New Book Citation", command=OutputCitation)
 book_test_button.grid(column = 0, row=7, padx =2 , pady =2)
 

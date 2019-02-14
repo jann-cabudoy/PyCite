@@ -10,16 +10,7 @@ class BookCitation(Citation):
         self.city = city.get()
         self.state = state.get()
 
-    def getpub(self):
-        return self.pub
-
-    def getcity(self):
-        return self.city
-
-    def getstate(self):
-        return self.state
-
     def generatecitation(self):
-        citation_string = authlast + ", " + authfirst[0:1] + "." + " (" + pubyear + "). " + title + ". " + city + ", " + state + ": " + pub + "." + "\n" + "\n"
+        citation_string = self.authlast + ", " + self.authfirst[0:1] + "." + " (" + self.pubyear + "). " + self.title + ". " + self.city + ", " + self.state + ": " + self.pub + "." + "\n" + "\n"
         return citation_string
 
