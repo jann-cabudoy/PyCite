@@ -6,9 +6,9 @@ class BookCitation(Citation):
 
     def __init__(self, authlast, authfirst, title, pubyear, pub, city, state):
         Citation.__init__(self, authlast, authfirst, title, pubyear)
-        self.pub = pub
-        self.city = city
-        self.state = state
+        self.pub = str(pub)
+        self.city = str(city)
+        self.state = str(state)
 
     def getpub(self):
         return self.pub

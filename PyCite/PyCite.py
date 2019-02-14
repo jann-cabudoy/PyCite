@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
-from citationdeps import Book
+from Book import BookCitation
+from Stack import Stack
 
 #Main window set up
 root = Tk()
@@ -49,10 +50,30 @@ state.grid(column=1, row=4, padx=2, pady=2)
 publisher.grid(column=1, row=5, padx=2, pady=2)
 title.grid(column=1, row=6, padx=2, pady=2)
 #Testing book class
+object_list = []
+textbox = Text(content)
+textbox.grid(column=3, row=0)
 def NewBookCitation():
-    new_book = BookCitation(ln, fn, title, pd, pub, city, state)
-    return new_book;
+    new_book = BookCitation(ln.get(), fn.get(), title.get(), pd.get(), pub.get(), city.get(), state.get())
+    object_list.append(new_book)
+    return;
 
-book_test_button = ttk.Button(content, text="Make New Book Citation", command=NewBookCitation)
+def OutputCitation():
+    NewBookCitation()
+    a = object_list[0]
+    lno = a.getauthlast()
+    fno = a.getauthfirst()
+    pdo = a.getpubyear()
+    titleo = a.gettitle()
+    cityo = a.getcity()
+    stateo = a.getstate()
+    pubo = a.getpub()
+    citation_string = lno + ", " + fno[0:1] + "." + " (" + pdo + ") " + titleo + ". " + cityo + ", " + stateo + ": " + pubo + "." + "\n"
+    textbox.insert(END, citation_string)
+    return;
+
+book_test_button = ttk.Button(content, text="Make New Book Citation", command=OutputCitation)
+book_test_button.grid(column = 0, row=7, padx =2 , pady =2)
+
 
 root.mainloop()
