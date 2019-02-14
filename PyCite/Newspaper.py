@@ -19,3 +19,6 @@ class NewspaperCitation(Citation):
     def getpgend(self):
         return self.end
 
+    def generatecitation(self):
+        return
+

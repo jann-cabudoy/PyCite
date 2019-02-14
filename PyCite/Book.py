@@ -19,3 +19,7 @@ class BookCitation(Citation):
     def getstate(self):
         return self.state
 
+    def generatecitation(self):
+        citation_string = authlast + ", " + authfirst[0:1] + "." + " (" + pubyear + "). " + title + ". " + city + ", " + state + ": " + pub + "." + "\n" + "\n"
+        return citation_string
+

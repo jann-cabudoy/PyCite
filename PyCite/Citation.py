@@ -19,4 +19,7 @@ class Citation(object):
     def getpubyear(self):
         return self.pubyear
 
+    def generatecitation(self):
+        return
+
 

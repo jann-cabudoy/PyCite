@@ -23,5 +23,8 @@ class MagazineCitation(Citation):
     def getpgend(self):
         return self.pgend
 
+    def generatecitation(self):
+        return
+
 
 

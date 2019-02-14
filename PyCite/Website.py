@@ -10,3 +10,7 @@ class WebsiteCitation(Citation):
 
     def geturl(self):
         return self.url
+
+    def generatecitation(self):
+        citation_string = authlast + ", " + authfirst[0:1] + " (" + pubyear + ")." + title + "Retrieved from " + url
+        return

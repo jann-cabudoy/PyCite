@@ -14,3 +14,6 @@ class FilmCitation(Citation):
 
     def getstudio(self):
         return self.studio
+
+    def generatecitation(self):
+        return
