@@ -2,7 +2,8 @@ from Citation import Citation
 
 class JournalCitation(Citation):
     """description of class"""
-
+   
+    #Args passed into class are StringVar, so must use .get() to get an actual string
     def __init__(self, authlast, authfirst, title, pubyear, issue, jname, pgbeg, pgend):
         Citation.__init__(self, authlast, authfirst, title, pubyear)
         self.issue = issue.get()
