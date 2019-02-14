@@ -5,10 +5,10 @@ class MagazineCitation(Citation):
 
     def __init__(self, authlast, authfirst, title, pubyear, mtitle, issue, pgbeg, pgend):
         Citation.__init__(self, authlast, authfirst, title, pubyear)
-        self.mtitle = mtitle
-        self.issue = issue
-        self.pgbeg = pgbeg
-        self.pgend = pgend
+        self.mtitle = mtitle.get()
+        self.issue = issue.get()
+        self.pgbeg = pgbeg.get()
+        self.pgend = pgend.get()
 
     def getmtitle(self):
         return self.mtitle

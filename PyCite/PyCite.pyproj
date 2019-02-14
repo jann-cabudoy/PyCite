@@ -27,9 +27,6 @@
     <Compile Include="Book.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Stack.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Magazine.py">
       <SubType>Code</SubType>
     </Compile>

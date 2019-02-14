@@ -5,10 +5,10 @@ class JournalCitation(Citation):
 
     def __init__(self, authlast, authfirst, title, pubyear, issue, jname, pgbeg, pgend):
         Citation.__init__(self, authlast, authfirst, title, pubyear)
-        self.issue = issue
-        self.jname = jname
-        self.pgbeg = pgbeg
-        self.pgend = pgend
+        self.issue = issue.get()
+        self.jname = jname.get()
+        self.pgbeg = pgbeg.get()
+        self.pgend = pgend.get()
 
     def getissue(self):
         return self.issue

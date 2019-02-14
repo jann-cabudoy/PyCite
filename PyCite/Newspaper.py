@@ -5,9 +5,9 @@ class NewspaperCitation(Citation):
 
     def __init__(self, authlast, authfirst, title, pubyear, ntitle, pgbeg, pgend):
         Citation.__init__(self, authlast, authfirst, title, pubyear)
-        self.ntitle = ntitle
-        self.pgbeg = pgbeg
-        self.pgend = pgend
+        self.ntitle = ntitle.get()
+        self.pgbeg = pgbeg.get()
+        self.pgend = pgend.get()
 
     def getntitle(self):
         return self.ntitle

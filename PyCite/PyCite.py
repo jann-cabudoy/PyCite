@@ -53,11 +53,14 @@ title.grid(column=1, row=6, padx=2, pady=2)
 object_list = []
 textbox = Text(content)
 textbox.grid(column=3, row=0)
+#StringVar() -> BookCitation
+#Takes inputs from Entry and puts as params of a BookCitation
 def NewBookCitation():
-    new_book = BookCitation(ln.get(), fn.get(), title.get(), pd.get(), pub.get(), city.get(), state.get())
+    new_book = BookCitation(ln, fn, title, pd, pub, city, state)
     object_list.append(new_book)
     return;
-
+#BookCitation -> String
+#Takes parameters of BookCitation and outputs into a formatted String
 def OutputCitation():
     NewBookCitation()
     a = object_list[0]
